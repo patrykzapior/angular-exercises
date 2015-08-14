@@ -6,6 +6,7 @@
     {
         var api = $resource('/api/post/:a', null, {
 
+
         });
         return {
             query: function ()
