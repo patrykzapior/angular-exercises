@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body class="container">
-<div ng-controller="BlogPostCtrl as blogPosts">
+<div ng-controller="BlogPostCtrl as blogPosts" >
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
@@ -16,10 +16,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
+        <tr ng-repeat="post in blogPosts.posts">
+            <th>{{post.ID}}</th>
+            <th>{{post.Author}}</th>
+            <th>{{post.Title}}</th>
         </tr>
         </tbody>
     </table>
